@@ -22,23 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PilaTF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/implementación/PilaTF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ColaPU.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/implementación/ColaPU.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,18 +83,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiccionarioMultipleA.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiccionarioMultipleA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/implementación/DiccionarioMultipleA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9125214">
-              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+            <state vertical-scroll-proportion="-12.068966">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PilaLD.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/implementación/PilaLD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColaLD.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/implementación/ColaLD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.94168097">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nodo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/implementación/Nodo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/src/tda/DiccionarioMultipleTDA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -141,8 +166,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -166,6 +191,9 @@
         <option value="$PROJECT_DIR$/src/implementación/DiccionarioSimpleA.java" />
         <option value="$PROJECT_DIR$/src/tda/DiccionarioMultipleTDA.java" />
         <option value="$PROJECT_DIR$/src/implementación/DiccionarioMultipleA.java" />
+        <option value="$PROJECT_DIR$/src/implementación/Nodo.java" />
+        <option value="$PROJECT_DIR$/src/implementación/PilaLD.java" />
+        <option value="$PROJECT_DIR$/src/implementación/ColaLD.java" />
       </list>
     </option>
   </component>
@@ -662,14 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tda/DiccionarioMultipleTDA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/implementación/DiccionarioSimpleA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -680,16 +700,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tda/DiccionarioMultipleTDA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/implementación/DiccionarioMultipleA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9125214">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+        <state vertical-scroll-proportion="-12.068966">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/implementación/Nodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/implementación/PilaLD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/implementación/ColaLD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94168097">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
           </folding>
         </state>
       </provider>

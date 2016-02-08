@@ -58,12 +58,47 @@ public class DiccionarioMultipleA implements DiccionarioMultipleTDA {
 
     @Override
     public void EliminarValor(int clave, int valor) {
-        int pos
+        int posC = this.Clave2Indice(clave);
+
+        if (posC != -1){
+            Elemento e = elementos[posC];
+            int posV = this.Valor2indice(e,valor);
+
+            if (posV!=-1){
+                e.valores[posV]=e.valores[e.cantValores-1];
+                e.cantValores--;
+                if (e.cantValores==0){
+                    this.Eliminar(clave);
+                }
+            }
+        }
+    }
+
+    @Override
+    public ConjuntoTDA Recuperar(int clave) {
+        ConjuntoTDA c = new ConjuntoTA();
+        c.InicializarConjunto();
+
+        int pos = this.Clave2Indice(clave);
+        if (pos!=-1){
+            Elemento e = elementos[pos];
+            for (int i = 0; i <e.cantValores ; i++) {
+                c.Agregar(e.valores[i]);
+            }
+        }
+        return c;
     }
 
     @Override
     public ConjuntoTDA Claves() {
-        return null;
+        ConjuntoTDA claves = new ConjuntoTA();
+        claves.InicializarConjunto();
+
+        for (int i = 0; i < cantClaves ; i++) {
+            claves.Agregar(elementos[i].clave);
+        }
+
+        return claves;
     }
 
     private int Clave2Indice(int clave){
