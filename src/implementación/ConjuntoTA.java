@@ -51,4 +51,9 @@ public class ConjuntoTA implements ConjuntoTDA {
         }
         return (i<cant);
     }
+
+    @Override
+    public int Elegir() {
+        return a[0];
+    }
 }
