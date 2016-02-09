@@ -74,7 +74,7 @@ public class DiccionarioSimpleLD implements DiccionarioSimpleTDA{
 
     private NodoClave Clave2NodoClave(int clave){
         NodoClave aux = origen;
-        while(aux.sigClave != null && aux.sigClave.clave != clave){
+        while(aux != null && aux.clave != clave){
             aux = aux.sigClave;
         }
         return aux;
