@@ -10,7 +10,8 @@ public class ColaLD implements ColaTDA{
 
     @Override
     public void InicializarCola() {
-        primero=ultimo=null;
+        primero=null;
+        ultimo=null;
     }
 
     @Override
@@ -43,6 +44,6 @@ public class ColaLD implements ColaTDA{
 
     @Override
     public boolean ColaVacia() {
-        return false;
+        return primero==null;
     }
 }
