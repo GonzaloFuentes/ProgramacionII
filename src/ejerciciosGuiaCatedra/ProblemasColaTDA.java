@@ -97,9 +97,69 @@ public class ProblemasColaTDA {
 
     /*4 e) Determinar si una Cola es capicúa o no. Para ser capicúa debe cumplir
     que el primer elemento es igual al último, el segundo igual al penúltimo, etc.*/
+    public static  boolean EsColaCapicua(ColaTDA cola){
+        ColaTDA auxCola = new ColaLD();
+        auxCola.InicializarCola();
 
-    //4 f) Determinar si la Cola C1 es la inversa de la Cola C2. Dos Colas serán
+        int cant = 0;
 
+        while (!cola.ColaVacia()){
+            auxCola.Acolar(cola.Primero());
+            cola.Desacolar();
+            cant++;
+        }
+
+        int iteraciones = cant/2;
+        PilaTDA auxPila = new PilaLD();
+        auxPila.InicializarPila();
+
+        for (int i = 0; i<iteraciones;i++){
+            auxPila.Apilar(auxCola.Primero());
+            auxCola.Desacolar();
+        }
+
+        if (cant%2!=0){
+            auxCola.Desacolar();
+        }
+
+        boolean esCapicua=true;
+
+        while (!auxCola.ColaVacia() && esCapicua){
+            if (auxCola.Primero() != auxPila.Tope()){
+                esCapicua = false;
+            }
+            else {
+                auxCola.Desacolar();;
+                auxPila.Desapilar();
+            }
+        }
+        return (auxCola.ColaVacia() && auxPila.PilaVacia() && esCapicua);
+    }
+
+    /*4 f) Determinar si la Cola C1 es la inversa de la Cola C2. Dos Colas serán
+    inversas, si tienen los mismos elementos pero en orden inverso.*/
+    public static boolean EsColaInversa(ColaTDA c1, ColaTDA c2){
+        boolean esInversa = true;
+        PilaTDA aux = new PilaLD();
+        aux.InicializarPila();
+
+        while (!c2.ColaVacia()){
+            aux.Apilar(c2.Primero());
+            c2.Desacolar();
+        }
+
+        while (!c1.ColaVacia() && esInversa){
+            if (c1.Primero()!=aux.Tope()){
+                esInversa = false;
+            }
+            else{
+                c1.Desacolar();
+                aux.Desapilar();
+            }
+        }
+
+        return (c1.ColaVacia() && aux.PilaVacia() && esInversa);
+    }
 
     private static void MostrarCola(ColaTDA cola){
         int i = 1;
@@ -140,7 +200,7 @@ public class ProblemasColaTDA {
         InvertirContenidoColaNoAuxPila(origen);
         MostrarCola(origen);
 
-        System.out.println("Saber si el final de dos colas coinciden\nIngresoCola1: 10,11,12" +
+        System.out.println("Saber si el final de dos colas coinciden\nIngreso Cola1: 10,11,12" +
                 "\nIngresoCola2: 10,11,12,12,13");
         origen.Acolar(10);
         origen.Acolar(11);
@@ -157,6 +217,31 @@ public class ProblemasColaTDA {
         else
             System.out.println("No Coinciden");
 
+        System.out.println("\n ------Saber si es capicua\nIngreso Cola1: 10,11,12,11,10" );
+        origen.Acolar(10);
+        origen.Acolar(11);
+        origen.Acolar(12);
+        origen.Acolar(11);
+        origen.Acolar(10);
+
+        if (EsColaCapicua(origen))
+            System.out.println("Es Capicua");
+        else
+            System.out.println("No es Capicua");
+
+
+        System.out.println("\n ------Saber si es capicua\nIngreso Cola1: 10,11,12 - Cola2: 12,11,10" );
+        origen.Acolar(10);
+        origen.Acolar(11);
+        origen.Acolar(12);
+        destino.Acolar(12);
+        destino.Acolar(11);
+        destino.Acolar(10);
+
+        if (EsColaInversa(origen,destino))
+            System.out.println("Es inversa");
+        else
+            System.out.println("No es inversa");
     }
 
 }
