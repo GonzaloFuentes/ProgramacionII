@@ -22,6 +22,7 @@ public class DiccionarioSimpleA implements DiccionarioSimpleTDA {
         cant = 0;
     }
 
+
     @Override
     public void Agregar(int clave, int valor) {
         int pos=this.Clave2Indice(clave);

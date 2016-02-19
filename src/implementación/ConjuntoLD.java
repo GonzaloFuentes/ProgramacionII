@@ -51,7 +51,7 @@ public class ConjuntoLD implements ConjuntoTDA {
     public boolean Pertenece(int x) {
         Nodo aux = c;
 
-        while (aux.sig!=null && aux.info!=x){
+        while (aux!=null && aux.info!=x){
             aux=aux.sig;
         }
 
